@@ -12,10 +12,22 @@ This little hack goes all the way back to the XP/Vista days. I'm surprised its s
 
 ## Description
 
-This quick-and-dirty little hack allows a user to get an Administration/System-Level Command Line prompt on Windows at the login screen.  Allowing them to do whatever they want or needed to that machine if they are denied Administrative access to it. 
-
+This quick-and-dirty little hack allows a user to get an Administration/System-Level Command Line prompt on Windows at the login screen.  Allowing them to do whatever they want or needed to that machine if they are denied Administrative access to it. This is also great when you have forgotten your password to an account on your own Windows computer.
 
 ## Steps
+
+1. Boot the device off of USB with some Live Linux Distro or Window Recovery Media.
+2. Make a backup of C:\Windows\System32\Utilman.exe
+3. Copy C:\Windows\System32\cmd.exe to C:\Windows\System32\Utilman.exe
+4. Reboot the computer and remove the boot media just used.
+5. When the Login Screen appears - click on the Ease of Access icon in the bottom right-hand corner
+6. Create a user for yourself on the command prompt
+7. Log into Windows using the username just created.
+8. Add the user account that doesn't have Admin access to the Administrators local group
+9. Clean up after yourself! 
+10. Log out of the account you just created, and log back in to the computer with the other account that lost admin access
+11. Clean up after yourself some more!
+
 
 1 - Boot the computer off of a USB device.
      a - If this is Windows Media - Choose the Language, click Next.
