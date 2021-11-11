@@ -23,7 +23,11 @@ This quick-and-dirty little hack allows a user to get an Administration/System-L
           - When the next screen loads up, hit the SHIFT+F10 keys to bring up a command prompt.
      - If this is a Linux Live Distro:
           - Open up a terminal window and mount the computer's hard drive where Windows is installed.
-2. Make a backup of C:\Windows\System32\Utilman.exe
+2. Make a backup of Utilman.exe
+     - If this is Windows 10 Recovery Media:
+          - `move C:\Windows\System32\Utilman.exe C:\Windows\System32\Utilman.exe.backup`
+     - If this is a Linux Live Distro:
+          - `mv /mnt/harddrive/Windows/System32/Utilman.exe /mnt/harddrive/Windows/System32/Utilman.exe.backup`
 3. Copy C:\Windows\System32\cmd.exe to C:\Windows\System32\Utilman.exe
 4. Reboot the computer and remove the boot media just used.
 5. When the Login Screen appears - click on the Ease of Access icon in the bottom right-hand corner
