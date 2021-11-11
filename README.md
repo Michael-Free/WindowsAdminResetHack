@@ -2,13 +2,13 @@
 
 Got Root?
 
-##Purpose 
+## Purpose 
 
 This is a great little trick for recovering accounts/passwords or even getting admin-level privileges on a Windows-based computer. This was recently used by me when our team encountered this exact issue: https://answers.microsoft.com/en-us/windows/forum/all/no-way-to-input-admin-userpass/be15fb3b-49f9-48b8-8de8-631a8b789fbd.  We couldn't join newly re-imaged machine to a domain, and our admin account was having weird behaviour with UAC controls. 
 
 We haven't completely narrowed down the root cause, but it may be Group Policy related on our AD controller.  It definitely isn't the best way to fix this issue...  Especially when you're in a remote situation, don't have access to BIOS passwords, or the drive is encrypted.  However, it saved us in a pinch!  This little hack goes all the way back to the XP/Vista days. I'm surprised its still a thing?
 
-##Description
+## Description
 
 
 
