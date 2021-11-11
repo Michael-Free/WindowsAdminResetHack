@@ -17,6 +17,12 @@ This quick-and-dirty little hack allows a user to get an Administration/System-L
 ## Steps
 
 1. Boot the device off of USB with some Live Linux Distro or Window Recovery Media.
+     - If this is Windows 10 Recovery Media:
+          - Once the media has fully booted, choose the Language, click Next.
+          - Instead of proceeding with a new install, in the bottom left-hand corner of the window, click "Repair This Computer."
+          - When the next screen loads up, hit the SHIFT+F10 keys to bring up a command prompt.
+     - If this is a Linux Live Distro:
+          - Open up a terminal window and mount the computer's hard drive where Windows is installed.
 2. Make a backup of C:\Windows\System32\Utilman.exe
 3. Copy C:\Windows\System32\cmd.exe to C:\Windows\System32\Utilman.exe
 4. Reboot the computer and remove the boot media just used.
@@ -29,10 +35,7 @@ This quick-and-dirty little hack allows a user to get an Administration/System-L
 11. Clean up after yourself some more!
 
 
-1 - Boot the computer off of a USB device.
-     a - If this is Windows Media - Choose the Language, click Next.
-     b - On the next screen in the bottom left, click "Repair This Computer"
-     c - When the next screen loads hit SHIFT+F10 to bring up a command prompt
+
 2 - Move C:\Windows\System32\Utilman.exe to a safe location because we're going to over write it. (C:\)
 3 - Copy C:\Windows\System32\cmd.exe to C:\Windows\System32\Utilman.exe.
 4 - Reboot the computer. 
