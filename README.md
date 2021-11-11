@@ -4,16 +4,18 @@ Got Root?
 
 ## Purpose 
 
-This is a great little trick for recovering accounts/passwords or even getting admin-level privileges on a Windows-based computer. This was recently used by me when our team encountered this exact issue: https://answers.microsoft.com/en-us/windows/forum/all/no-way-to-input-admin-userpass/be15fb3b-49f9-48b8-8de8-631a8b789fbd.  We couldn't join newly re-imaged machine to a domain, and our admin account was having weird behaviour with UAC controls. 
+This is a great little trick for recovering accounts/passwords or even getting admin-level privileges on a Windows-based computer. This was recently used by me when our team encountered this [exact issue](https://answers.microsoft.com/en-us/windows/forum/all/no-way-to-input-admin-userpass/be15fb3b-49f9-48b8-8de8-631a8b789fbd).  We couldn't join newly re-imaged machine to a domain, and our admin account was having weird behaviour with UAC controls. The link does have someone suggest a fix - but it was suggesting registry edits, which required admin rights in the first place, and booting into recovery to modify a registry entry wasn't quick and dirty enough.
 
-We haven't completely narrowed down the root cause, but it may be Group Policy related on our AD controller.  It definitely isn't the best way to fix this issue...  Especially when you're in a remote situation, don't have access to BIOS passwords, or the drive is encrypted.  However, it saved us in a pinch!  This little hack goes all the way back to the XP/Vista days. I'm surprised its still a thing?
+We haven't completely narrowed down the root cause, but it may be Group Policy related on our Domain Controller.  It definitely isn't the best way to fix this issue...  Especially when you're in a remote situation, don't have access to BIOS passwords, or the drive is encrypted.  However, it saved us in a pinch!  
+
+This little hack goes all the way back to the XP/Vista days. I'm surprised its still a thing?
 
 ## Description
 
+This quick-and-dirty little hack allows a user to get an Administration/System-Level Command Line prompt on Windows at the login screen.  Allowing them to do whatever they want or needed to that machine if they are denied Administrative access to it. 
 
 
 ## Steps
-I dont have an answer to why this is happening - but I was able to do hacky a work around for this issue.
 
 1 - Boot the computer off of a USB device.
      a - If this is Windows Media - Choose the Language, click Next.
