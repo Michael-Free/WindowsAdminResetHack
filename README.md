@@ -1,5 +1,10 @@
-# WindowsAdminResetHAck
+# Windows Admin Reset Hack
 
+##Purpose
+
+##Description
+
+## Steps
 I dont have an answer to why this is happening - but I was able to do hacky a work around for this issue.
 
 1 - Boot the computer off of a USB device.
