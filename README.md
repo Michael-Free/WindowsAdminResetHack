@@ -39,21 +39,15 @@ This quick-and-dirty little hack allows a user to get an Administration/System-L
 6. Create a user for yourself on the command prompt.
      - `net user <username> <password> /add`
      - `net localgroup administrators <username> /add`
-     - 
+     - Close the command prompt.
 7. Log into Windows using the username just created.
 8. Add the user account that doesn't have Admin access to the Administrators local group
-9. Clean up after yourself! 
+     - `net user <username> <password> /add`
+     - `net localgroup administrators <username> /add`
+     - Close the command prompt.
+9. Clean up after yourself! Move Utilman.exe back to C:\Windows\System32\Utilman.exe. 
+     - Approve overwriting, as we're setting this back to normal.
 10. Log out of the account you just created, and log back in to the computer with the other account that lost admin access
 11. Clean up after yourself some more!
-
-
-    a - 
-    b - 
-    c - close command prompt
-7 - Log in to windows using the username and password just created
-8 - Add the useraccounts needed to the administrator group using commands from step 6
-9 - Move C:\Utilman.exe back to C:\Windows\System32\Utilman.exe. Approve overwriting, as we're setting this back to normal.
-10 - Log out of this account, and sign back in with the proper local admin account.
-11 - Remove your newly created account to clean up after yourself:  
-      - net localgroup administrators <username> /delete
-      - net user <username> /delete
+      - `net localgroup administrators <username> /delete`
+      - `net user <username> /delete`
